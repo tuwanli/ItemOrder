@@ -20,16 +20,7 @@
     backView = [[UIView alloc]initWithFrame:CGRectMake(0, 91, k_width, AirButtonHeight*2)];
     backView.backgroundColor = [UIColor whiteColor];
     [self addSubview:backView];
-    
-    NSInteger count;
-    count = dataArr.count;
-    if (dataArr.count == 0){
-        UILabel *remindView = [[UILabel alloc]initWithFrame:backView.bounds];
-        remindView.text = @"网络连接错误,请检查网络";
-        remindView.font = [UIFont systemFontOfSize:16];
-        remindView.textAlignment = NSTextAlignmentCenter;
-        [backView addSubview:remindView];
-    }
+
     self.modelArr = [NSMutableArray arrayWithArray:dataArr];
     
     
